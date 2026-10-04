@@ -1,0 +1,9 @@
+{
+  "network": "arbitrumSepolia",
+  "chainId": 421614,
+  "deployer": "0x4d7be80743159040f13637B52eA0b85fA4767E81",
+  "usdg": "0x3801B585C6E941EBBCeDC7e4631D9f517f23942f",
+  "chainSeal": "0x7bd586Bf789dCB55ad64Eef2010E23c63DC7f4C9",
+  "deployBlock": 315550668,
+  "deployedAt": "2026-10-04T03:59:52.677Z"
+}

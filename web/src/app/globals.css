@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background: #000;
+  color: #fff;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Kotak data bergaya neon (sesuai blueprint) */
+@layer components {
+  .neon-box {
+    @apply border border-cyan-400 bg-black shadow-[0_0_10px_#22d3ee];
+  }
+  .neon-box-red {
+    @apply border border-red-500 bg-black shadow-[0_0_14px_#ef4444];
+  }
+  .neon-box-green {
+    @apply border border-emerald-400 bg-black shadow-[0_0_14px_#34d399];
+  }
+  .neon-box-amber {
+    @apply border border-amber-400 bg-black shadow-[0_0_12px_#fbbf24];
+  }
+  .btn-neon {
+    @apply border border-cyan-400 bg-black px-4 py-2 text-sm font-semibold text-cyan-400 shadow-[0_0_8px_#22d3ee] transition
+      hover:bg-cyan-400 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white
+      disabled:cursor-not-allowed disabled:opacity-40 disabled:shadow-none disabled:hover:bg-black disabled:hover:text-cyan-400;
+  }
+  .btn-danger {
+    @apply border border-red-500 bg-black px-4 py-2 text-sm font-semibold text-red-400 shadow-[0_0_8px_#ef4444] transition
+      hover:bg-red-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .input-neon {
+    @apply w-full border border-cyan-400/60 bg-black px-3 py-2 text-sm text-white placeholder:text-zinc-500
+      focus:border-cyan-400 focus:shadow-[0_0_8px_#22d3ee] focus:outline-none;
+  }
+}
+
+/* Bingkai scanner dengan sudut neon */
+.scanner-frame {
+  position: relative;
+  border: 1px solid #22d3ee;
+  box-shadow: 0 0 14px #22d3ee, inset 0 0 14px rgba(34, 211, 238, 0.25);
+}
+.scanner-frame video {
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scan-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #22d3ee;
+    box-shadow: 0 0 10px #22d3ee;
+    animation: scan 2.4s linear infinite;
+  }
+  @keyframes scan {
+    0% { top: 0; }
+    100% { top: 100%; }
+  }
+}
+
+/* Cetak hanya area label QR */
+@media print {
+  body * { visibility: hidden; }
+  .print-area, .print-area * { visibility: visible; }
+  .print-area { position: absolute; left: 0; top: 0; width: 100%; background: #fff; color: #000; }
+}

@@ -1,0 +1,8 @@
+node_modules
+.env
+artifacts
+cache
+typechain-types
+coverage
+coverage.json
+hardhat.sandbox.config.ts

@@ -1,0 +1,24 @@
+{
+  "name": "chainseal-contracts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ChainSeal OG - smart contracts (Arbitrum Sepolia)",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:local": "hardhat run scripts/deploy.ts --network hardhat",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network arbitrumSepolia",
+    "seed:sepolia": "hardhat run scripts/seed-demo.ts --network arbitrumSepolia",
+    "verify:sepolia": "hardhat run scripts/verify.ts --network arbitrumSepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "5.1.0",
+    "@types/node": "^20.14.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.0",
+    "hardhat": "^2.22.17",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.0"
+  }
+}
