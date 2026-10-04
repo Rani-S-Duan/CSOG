@@ -17,6 +17,7 @@ ChainSeal OG (Once Guard) is a phygital RWA protocol for supply chains and point
 
 ## The problem
 
+The problem of counterfeiting has become a critical issue. You can watch the documentary video at the following YouTube link: https://www.youtube.com/watch?v=DwADRlQ7PY0
 Scavengers collect used bottles and boxes, refill them with fake product and sell them again. A printed QR code or barcode cannot tell a genuine, never-sold package from a refilled one, because the code stays valid after the first sale.
 
 ## The solution
@@ -38,7 +39,7 @@ Wholesale (B2B) prices never go on-chain. Only the retail price set at unpack ti
 
 Open the live app on your phone or laptop: **https://chainseal-og.vercel.app**
 
-**1. Verify an item without signing in**
+**1. Verify an item**
 
 | Link | What you should see |
 |------|---------------------|
@@ -46,11 +47,15 @@ Open the live app on your phone or laptop: **https://chainseal-og.vercel.app**
 | [`/?item=ITEM-101-10`](https://chainseal-og.vercel.app/?item=ITEM-101-10) | Red **ALREADY REDEEMED** (this item was paid during testing) |
 | [`/?item=ITEM-FAKE-1`](https://chainseal-og.vercel.app/?item=ITEM-FAKE-1) | Red **NOT REGISTERED** (an ID that was never minted) |
 
+Or Try with this QRCode :
+<img width="2000" height="1414" alt="QRCODE V2 VERSEL 1" src="https://github.com/user-attachments/assets/bc3f5493-71c4-4ac6-b7d4-771e5bcd7881" />
+<img width="2000" height="1414" alt="QRCODE V2 VERCEL" src="https://github.com/user-attachments/assets/d6f7bc17-edc5-4ab5-a5d8-0f791dc8f799" />
+
 Items from a carton that the shop has not unpacked yet show a yellow **NOT ACTIVATED YET** screen.
 
 **2. Pay for an item (consumer flow)**
 
-1. Open [`/?item=ITEM-101-02`](https://chainseal-og.vercel.app/?item=ITEM-101-02) and tap **Sign in to pay**.
+1. Open and tap **Sign in to pay**.
 2. Sign in with Google or email. A wallet is created for you automatically.
 3. Tap **Get $100 (Faucet)** in the header to receive test USDG.
 4. Open the item link again and tap **Pay**. Your balance drops and the shop receives the money.
