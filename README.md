@@ -7,7 +7,6 @@ ChainSeal OG (Once Guard) is a phygital RWA protocol for supply chains and point
 | | |
 |---|---|
 | **Live app** | https://chainseal-og.vercel.app |
-| **Demo video** | ADD_VIDEO_LINK |
 | **Source code** | https://github.com/Rani-S-Duan/CSOG |
 | **ChainSeal contract** | [`0x7bd586Bf789dCB55ad64Eef2010E23c63DC7f4C9`](https://sepolia.arbiscan.io/address/0x7bd586Bf789dCB55ad64Eef2010E23c63DC7f4C9) |
 | **MockUSDG contract** | [`0x3801B585C6E941EBBCeDC7e4631D9f517f23942f`](https://sepolia.arbiscan.io/address/0x3801B585C6E941EBBCeDC7e4631D9f517f23942f) |
